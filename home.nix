@@ -105,7 +105,11 @@
 
   programs.vscode = {
     enable = true;
-    extensions = [ pkgs.vscode-extensions.bbenoist.nix ];
+    extensions = [
+      pkgs.vscode-extensions.bbenoist.nix
+      pkgs.vscode-extensions.tomoki1207.pdf
+      pkgs.vscode-extensions.redhat.vscode-xml
+    ];
   };
 
   # starship - an customizable prompt for any shell
