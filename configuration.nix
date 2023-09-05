@@ -106,7 +106,7 @@
     # gnomeExtensions.sound-output-device-chooser
     # gnome.adwaita-icon-theme
     helix.packages."${pkgs.system}".helix
-    vscode-with-extensions
+    # vscode-with-extensions
   ];
 
   environment.variables.EDITOR = "nano";

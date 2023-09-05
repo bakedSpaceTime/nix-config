@@ -103,6 +103,11 @@
     usbutils # lsusb
   ];
 
+  programs.vscode = {
+    enabled = true;
+    extensions = [ "bbenoist.Nix" ]
+  }
+
   # starship - an customizable prompt for any shell
   # programs.starship = {
   #   enable = true;
