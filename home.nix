@@ -28,8 +28,13 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     firefox
+    google-chrome
     neofetch
+    vlc
     # nnn # terminal file manager
+
+    # development
+    postman
 
     # archives
     zip
