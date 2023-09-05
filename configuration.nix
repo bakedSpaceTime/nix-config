@@ -86,12 +86,6 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes"];
-  # nix = {
-  #   package = pkgs.nixFlakes;
-  #   extraOptions = ''
-  #     experimental-features = nix-command flakes
-  #   '';
-  # };
 
   # Enable the OpenSSH daemon
   services.openssh = {
