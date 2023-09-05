@@ -25,21 +25,6 @@
   #   "Xft.dpi" = 172;
   # };
 
-  # basic configuration of git, please change to your own
-  programs.git = {
-    enable = true;
-    userName = "bakedSpaceTime";
-    userEmail = "tushyais@gmail.com";
-    # aliases = {
-    #   lg1 = "";
-    # };
-    lfs.enable = true;
-  };
-
-  programs.go = {
-    enable = true;
-  }
-
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     firefox
@@ -109,6 +94,21 @@
       pkgs.vscode-extensions.redhat.vscode-yaml
     ];
   };
+
+  # basic configuration of git, please change to your own
+  programs.git = {
+    enable = true;
+    userName = "bakedSpaceTime";
+    userEmail = "tushyais@gmail.com";
+    # aliases = {
+    #   lg1 = "";
+    # };
+    lfs.enable = true;
+  };
+
+  programs.go = {
+    enable = true;
+  }
 
   # starship - an customizable prompt for any shell
   # programs.starship = {
