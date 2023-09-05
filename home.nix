@@ -30,6 +30,9 @@
     enable = true;
     userName = "bakedSpaceTime";
     userEmail = "tushyais@gmail.com";
+    # aliases = {
+    #   lg1 = "";
+    # };
   };
 
   # Packages that should be installed to the user profile.
