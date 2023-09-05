@@ -76,10 +76,6 @@
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICaEBHrpF6IIT3/tV7LNzCnAFhU9qmYdrbQ6WrFGQkyu tushy@TIWINX1"
     ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
   };
 
   # Allow unfree packages
