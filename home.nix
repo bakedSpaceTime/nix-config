@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # TODO please change the username & home direcotry to your own
   home.username = "tushya";
   home.homeDirectory = "/home/tushya";
 
@@ -35,35 +34,25 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    # here is some command line tools I use frequently
-    # feel free to add your own or remove some of them
     firefox
-
     neofetch
     # nnn # terminal file manager
 
     # archives
     zip
-    # xz
+    xz
     unzip
-    # p7zip
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
-    # jq # A lightweight and flexible command-line JSON processor
-    # yq-go # yaml processer https://github.com/mikefarah/yq
     # exa # A modern replacement for ‘ls’
     # fzf # A command-line fuzzy finder
 
     # networking tools
     mtr # A network diagnostic tool
-    # iperf3
     dnsutils  # `dig` + `nslookup`
-    # ldns # replacement of `dig`, it provide the command `drill`
-    # aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    # socat # replacement of openbsd-netcat
-    # nmap # A utility for network discovery and security auditing
-    # ipcalc  # it is a calculator for the IPv4/v6 addresses
+    ldns # replacement of `dig`, it provide the command `drill`
+    nmap # A utility for network discovery and security auditing
 
     # misc
     cowsay
