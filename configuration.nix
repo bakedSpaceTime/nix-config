@@ -45,6 +45,11 @@
     xkbVariant = "";
   };
 
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -71,7 +76,7 @@
   users.users.tushya = {
     isNormalUser = true;
     description = "Tushya";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICaEBHrpF6IIT3/tV7LNzCnAFhU9qmYdrbQ6WrFGQkyu tushy@TIWINX1"
     ];
