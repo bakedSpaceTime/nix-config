@@ -8,3 +8,6 @@ sudo mv /etc/nixos /etc/nixos.bak
 sudo ln -s ~/nix-config/ /etc/nixos
 sudo nixos-rebuild switch
 ```
+
+## Fix SSH issue
+`eval $(ssh-agent -s)`
