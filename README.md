@@ -6,4 +6,5 @@ NixOS configuration files
 git clone git@github.com:bakedSpaceTime/nix-config.git
 sudo mv /etc/nixos /etc/nixos.bak
 sudo ln -s ~/nix-config/ /etc/nixos
+sudo nixos-rebuild switch
 ```
