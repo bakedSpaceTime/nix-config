@@ -104,7 +104,7 @@
   ];
 
   programs.vscode = {
-    enabled = true;
+    enable = true;
     extensions = [ "bbenoist.Nix" ];
   };
 
