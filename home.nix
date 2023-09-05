@@ -33,6 +33,7 @@
     # aliases = {
     #   lg1 = "";
     # };
+    lfs.enable = true;
   };
 
   # Packages that should be installed to the user profile.
