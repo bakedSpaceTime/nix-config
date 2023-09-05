@@ -88,22 +88,22 @@
         # Set all input parameters as specialArgs of all sub-modules
         # so that we can use the `helix` input in sub-modules
         specialArgs = inputs;
-        # Make home-manager as a module of nixos
-        # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-
-          home-manager.users.tushya = import ./home.nix;
-
-          # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-        }
         modules = [
           # Import the configuration.nix here, so that the
           # old configuration file can still take effect.
           # Note: configuration.nix itself is also a Nix Module,
           ./configuration.nix
+          # Make home-manager as a module of nixos
+          # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.users.tushya = import ./home.nix;
+
+            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
+          }
         ];
       };
     };
