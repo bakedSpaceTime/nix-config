@@ -43,6 +43,11 @@
     desktopManager.gnome.enable = true;
   };
 
+  services.xrdp = {
+    enable = true;
+    openFirewall = true;
+  };
+
   programs.dconf.enable = true;
   programs.ssh.startAgent = true;
 
@@ -107,6 +112,7 @@
     git
     curl
     wget
+    xrdp
     # gnomeExtensions.gsconnect
     # gnomeExtensions.mpris-indicator-button
     # gnomeExtensions.sound-output-device-chooser
