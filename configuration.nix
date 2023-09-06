@@ -46,11 +46,6 @@
   programs.dconf.enable = true;
   programs.ssh.startAgent = true;
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-  };
-
   virtualisation.docker = {
     enable = true;
     rootless = {
@@ -112,8 +107,6 @@
     git
     curl
     wget
-    steam-tui
-    steamcmd
     # gnomeExtensions.gsconnect
     # gnomeExtensions.mpris-indicator-button
     # gnomeExtensions.sound-output-device-chooser
