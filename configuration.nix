@@ -44,6 +44,7 @@
   };
 
   programs.dconf.enable = true;
+  programs.ssh.startAgent = true;
 
   virtualisation.docker = {
     enable = true;

@@ -114,10 +114,6 @@
     enable = true;
   };
 
-  programs.ssh = {
-    startAgent = true;
-  };
-
   # starship - an customizable prompt for any shell
   # programs.starship = {
   #   enable = true;
