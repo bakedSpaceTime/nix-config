@@ -112,6 +112,8 @@
     git
     curl
     wget
+    steam-tui
+    steamcmd
     # gnomeExtensions.gsconnect
     # gnomeExtensions.mpris-indicator-button
     # gnomeExtensions.sound-output-device-chooser
