@@ -145,6 +145,26 @@
     };
   };
 
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      enable-hot-corners = false;
+      clock-show-weekday = true;
+    };
+    # "org/gnome/desktop/background" = {
+    #   picture-uri = "file://${wallpaperImg}";
+    # };
+    "org/gnome/desktop/datetime" = { automatic-timezone = true; };
+  };
+  gtk = {
+  gtk2 = {
+    configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";
+    extraConfig = ''
+      gtk-application-prefer-dark-theme=1
+    '';
+  };
+  gtk3 = { extraConfig = { gtk-application-prefer-dark-theme = 1; }; };
+  gtk4 = { extraConfig = { gtk-application-prefer-dark-theme = 1; }; };
   # starship - an customizable prompt for any shell
   # programs.starship = {
   #   enable = true;
