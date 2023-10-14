@@ -101,6 +101,10 @@
   #   "Xft.dpi" = 172;
   # };
   programs = {
+    # Let home Manager install and manage itself.
+    home-manager = {
+      enable = true;
+    };
     vscode = {
       enable = true;
       extensions = [
@@ -114,10 +118,12 @@
       enable = true;
       userName = "bakedSpaceTime";
       userEmail = "tushyais@gmail.com";
+      lfs = {
+        enable = true;
+      };
       # aliases = {
       #   lg1 = "";
       # };
-      lfs.enable = true;
     };
     go = {
       enable = true;
@@ -137,32 +143,7 @@
         urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
       };
     };
-    # Let home Manager install and manage itself.
-    programs.home-manager.enable = true;
   };
-  # programs.vscode = {
-  #   enable = true;
-  #   extensions = [
-  #     pkgs.vscode-extensions.bbenoist.nix
-  #     pkgs.vscode-extensions.tomoki1207.pdf
-  #     pkgs.vscode-extensions.redhat.vscode-xml
-  #     pkgs.vscode-extensions.redhat.vscode-yaml
-  #   ];
-  # };
-
-  # programs.git = {
-  #   enable = true;
-  #   userName = "bakedSpaceTime";
-  #   userEmail = "tushyais@gmail.com";
-  #   # aliases = {
-  #   #   lg1 = "";
-  #   # };
-  #   lfs.enable = true;
-  # };
-
-  # programs.go = {
-  #   enable = true;
-  # };
 
   # starship - an customizable prompt for any shell
   # programs.starship = {
@@ -190,23 +171,4 @@
   #     selection.save_to_clipboard = true;
   #   };
   # };
-
-  # programs.bash = {
-  #   enable = true;
-  #   enableCompletion = true;
-  #   # TODO add your cusotm bashrc here
-  #   bashrcExtra = ''
-  #     export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
-  #   '';
-
-  #   # set some aliases, feel free to add more or remove some
-  #   shellAliases = {
-  #     k = "kubectl";
-  #     urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
-  #     urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
-  #   };
-  # };
-
-  # Let home Manager install and manage itself.
-  # programs.home-manager.enable = true;
 }
