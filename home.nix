@@ -157,38 +157,38 @@
     "org/gnome/desktop/datetime" = { automatic-timezone = true; };
   };
   gtk = {
-  gtk2 = {
-    configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";
-    extraConfig = ''
-      gtk-application-prefer-dark-theme=1
-    '';
-  };
-  gtk3 = { extraConfig = { gtk-application-prefer-dark-theme = 1; }; };
-  gtk4 = { extraConfig = { gtk-application-prefer-dark-theme = 1; }; };
-  # starship - an customizable prompt for any shell
-  # programs.starship = {
-  #   enable = true;
-  #   # custom settings
-  #   settings = {
-  #     add_newline = false;
-  #     aws.disabled = true;
-  #     gcloud.disabled = true;
-  #     line_break.disabled = true;
-  #   };
-  # };
+    gtk2 = {
+      configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";
+      extraConfig = ''
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+    gtk3 = { extraConfig = { gtk-application-prefer-dark-theme = 1; }; };
+    gtk4 = { extraConfig = { gtk-application-prefer-dark-theme = 1; }; };
+    # starship - an customizable prompt for any shell
+    # programs.starship = {
+    #   enable = true;
+    #   # custom settings
+    #   settings = {
+    #     add_newline = false;
+    #     aws.disabled = true;
+    #     gcloud.disabled = true;
+    #     line_break.disabled = true;
+    #   };
+    # };
 
-  # alacritty - a cross-platform, GPU-accelerated terminal emulator
-  # programs.alacritty = {
-  #   enable = true;
-  #   # custom settings
-  #   settings = {
-  #     env.TERM = "xterm-256color";
-  #     font = {
-  #       size = 12;
-  #       draw_bold_text_with_bright_colors = true;
-  #     };
-  #     scrolling.multiplier = 5;
-  #     selection.save_to_clipboard = true;
-  #   };
-  # };
+    # alacritty - a cross-platform, GPU-accelerated terminal emulator
+    # programs.alacritty = {
+    #   enable = true;
+    #   # custom settings
+    #   settings = {
+    #     env.TERM = "xterm-256color";
+    #     font = {
+    #       size = 12;
+    #       draw_bold_text_with_bright_colors = true;
+    #     };
+    #     scrolling.multiplier = 5;
+    #     selection.save_to_clipboard = true;
+    #   };
+    # };
 }
