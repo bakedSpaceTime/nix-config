@@ -12,7 +12,7 @@
     # which represents the GitHub repository URL + branch/commit-id/tag.
 
     # Helix editor, using version 23.05
-    helix.url = "github:helix-editor/helix/23.05";
+    # helix.url = "github:helix-editor/helix/23.05";
     # Official NixOS package source, using nixos-unstable branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # home-manager, used for managing user configuration

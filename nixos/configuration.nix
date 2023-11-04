@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, helix, ... }:
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -59,6 +59,7 @@
       setSocketVariable = true;
     };
   };
+  # https://mitchellh.com/writing/nix-with-dockerfiles
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -118,7 +119,7 @@
     # gnomeExtensions.mpris-indicator-button
     # gnomeExtensions.sound-output-device-chooser
     # gnome.adwaita-icon-theme
-    helix.packages."${pkgs.system}".helix
+    # helix.packages."${pkgs.system}".helix
   ];
 
   environment.variables.EDITOR = "nano";
