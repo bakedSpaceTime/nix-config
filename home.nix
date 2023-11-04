@@ -14,9 +14,9 @@
     # changes in each release.
     stateVersion = "23.05";
 
-    file = {
-      ".background-image.jpg".source = ./images/background.jpg;
-    }
+    # file = {
+    #   ".background-image".source = ./images/background.jpg;
+    # }
 
     # Packages that should be installed to the user profile.
     packages = with pkgs; [
@@ -155,9 +155,9 @@
       enable-hot-corners = false;
       clock-show-weekday = true;
     };
-    # "org/gnome/desktop/background" = {
-    #   picture-uri = "file://${wallpaperImg}";
-    # };
+    "org/gnome/desktop/background" = {
+      picture-uri = "/home/tushya/.background-image";
+    };
     "org/gnome/desktop/datetime" = { automatic-timezone = true; };
   };
   gtk = {
