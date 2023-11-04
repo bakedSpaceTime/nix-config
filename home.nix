@@ -14,6 +14,10 @@
     # changes in each release.
     stateVersion = "23.05";
 
+    file = {
+      ".background-image.jpg".source = ./images/background.jpg;
+    }
+
     # Packages that should be installed to the user profile.
     packages = with pkgs; [
       firefox
